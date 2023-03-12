@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="shortcut icon" href="./favicon.ico">
-<title>Dreamin</title>
-<style>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <title>Dreamin</title>
+  <style>
     html {
       background: #494f5c;
       line-height: 1.6;
       letter-spacing: .06em;
       scroll-behavior: smooth;
     }
+
     h1 {
       font-size: 2.0em
     }
+
     body,
     button,
     input,
@@ -22,6 +27,7 @@
       color: #e8eef2;
       font-family: trebuchet ms, Verdana, verdana ref, segoe ui, sans-serif
     }
+
     a {
       color: #e8eef2;
       text-decoration: none;
@@ -86,23 +92,28 @@
       margin: 0;
       text-align: center
     }
+
     #home-social {
       font-size: 1.6em;
       text-align: center;
       opacity: .8
     }
+
     #home-social a {
       margin: 0 .2em
     }
+
     #home-nav {
       opacity: .8
     }
+
     #home-nav a {
       display: block;
       text-align: center;
       margin-top: .5em;
       font-size: 1.0em
     }
+
     .bg-img {
       position: fixed;
       top: 0;
@@ -118,116 +129,158 @@
       background-position: 50%;
       transition: opacity .5s
     }
-    .language{
-        display:inline;
-        margin-right:1rem;
+
+    .language {
+      display: inline;
+      margin-right: 1rem;
     }
-    .img_github{
-        width:3.5rem;
-        height:1rem;
+
+    .img_github {
+      width: 2.6rem;
+      height: 0.7rem;
     }
-    .img_cloudflare{
-        width:2.5rem;
-        height:1.25rem;
+
+    .img_cloudflare {
+      width: 1.5.rem;
+      height: 0.75rem;
+    }
+
+    @media screen and (max-width:767px) {
+      footer{
+        font-size:13px;
+      }
     }
   </style>
 </head>
-<body id="page">
-<div class="bg-img" style="background-image: url(&quot;https://cdn.staticaly.com/gh/Dreamin121/dreamin@master/Linux.jpg&quot;);"></div>
-<div id="spotlight">
-<div id="home-center">
-<h1 id="home-title">Space;D</h1>
-<div id="home-social">
-<a href="https://instagram.com/musang152" target="_blank" rel="noopener me" title="Instagram"><svg t="1671546149650" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2768" width="48" height="48"><path d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9z m0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zM725.5 250.7c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9c-0.1-26.6-21.4-47.9-47.9-47.9z" p-id="2769"></path><path d="M911.8 512c0-55.2 0.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-0.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-0.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9 0.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165z m-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z" p-id="2770">
-    </path>
-</svg></a><a href="https://github.com/dreamin121" target="_blank" rel="noopener me" title="Github"><svg t="1671592005462" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3791" width="48" height="48"><path d="M787.696941 669.515294c0 44.935529-23.431529 118.181647-78.787765 118.181647-55.416471 0-78.848-73.246118-78.848-118.181647 0-44.875294 23.431529-118.181647 78.848-118.181647 55.356235 0 78.787765 73.306353 78.787765 118.181647zM315.090824 551.333647c-55.356235 0-78.787765 73.306353-78.787765 118.181647 0 44.935529 23.431529 118.181647 78.787765 118.181647s78.787765-73.246118 78.787764-118.181647c0-44.875294-23.431529-118.181647-78.787764-118.181647zM1024 561.212235c0 68.367059-6.746353 140.950588-37.526588 203.715765-81.257412 164.321882-304.609882 180.284235-464.594824 180.284235-162.454588 0-399.36-14.095059-483.689412-180.284235C6.746353 702.765176 0 629.579294 0 561.212235c0-89.871059 24.636235-174.742588 83.727059-243.651764a338.160941 338.160941 0 0 1-16.624941-104.688942c0-46.140235 10.420706-92.220235 31.382588-134.144 97.219765 0 159.382588 42.465882 233.231059 100.291765a823.536941 823.536941 0 0 1 190.162823-21.504c57.825882 0 116.314353 6.204235 172.333177 19.696941 73.246118-57.223529 135.348706-98.484706 231.363764-98.484706 20.961882 41.863529 31.382588 88.003765 31.382589 134.144 0 35.117176-5.541647 70.174118-16.624942 103.424C999.424 385.807059 1024 471.341176 1024 561.212235z m-137.878588 108.303059c0-94.147765-57.163294-177.212235-157.515294-177.212235-40.598588 0-79.329882 7.408941-119.988706 12.950588-31.984941 4.939294-63.969882 6.746353-96.617412 6.746353s-64.632471-1.807059-96.617412-6.746353c-39.996235-5.541647-79.390118-12.950588-119.988706-12.950588-100.291765 0-157.515294 83.064471-157.515294 177.212235 0 188.295529 172.272941 217.208471 322.43953 217.208471h103.424c150.166588 0.060235 322.379294-28.912941 322.379294-217.208471z" p-id="3792">
-        </path>
-<polyline points="22,6 12,13 2,6"></polyline>
-</svg></a><a href="https://t.me/dreaminfuck" target="_blank" rel="noopener me" title="Telegram"><svg t="1671591855900" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="48" height="48"><path d="M912.213333 154.026667A85.333333 85.333333 0 0 0 853.333333 128a85.333333 85.333333 0 0 0-33.28 6.826667l-708.266666 306.773333a42.666667 42.666667 0 0 0-26.453334 42.666667V512a42.666667 42.666667 0 0 0 29.44 42.666667L298.666667 616.106667l55.466666 187.306666a75.946667 75.946667 0 0 0 56.32 53.333334 62.72 62.72 0 0 0 15.36 0 73.813333 73.813333 0 0 0 50.773334-20.48l67.84-64 131.413333 103.68a85.333333 85.333333 0 0 0 90.026667 9.386666l14.08-7.253333a88.32 88.32 0 0 0 46.506666-62.72L938.666667 235.093333a90.026667 90.026667 0 0 0-26.453334-81.066666zM763.733333 805.12a25.173333 25.173333 0 0 1-12.8 17.493333l-14.08 7.253334a19.626667 19.626667 0 0 1-8.96 2.133333 19.626667 19.626667 0 0 1-12.373333-4.693333l-160.426667-128a20.906667 20.906667 0 0 0-27.733333 0l-94.72 89.173333a11.093333 11.093333 0 0 1-5.973333 2.133333V640a21.76 21.76 0 0 1 6.826666-15.786667c136.106667-128 217.6-199.68 266.24-240.64a15.786667 15.786667 0 0 0 5.12-11.093333 13.653333 13.653333 0 0 0-4.266666-11.093333 14.933333 14.933333 0 0 0-17.92-4.266667l-322.56 203.52a21.333333 21.333333 0 0 1-18.346667 0L149.333333 494.933333l694.186667-301.226666a16.64 16.64 0 0 1 7.68 0 22.186667 22.186667 0 0 1 16.213333 7.68 26.88 26.88 0 0 1 6.826667 23.466666z" p-id="2677">
-    </path>
-    
-</svg></a>
-</div>
-<nav id="home-nav" class="site-nav">
-<div class="language"> 
-<a href="https://blog.drz.ink">Chinese/</a> 
-<a href="https://go.drz.ink/archives/">English</a>
-<a href="https://go.drz.ink/about/">About</a>
-<a href="https://drsee.notion.site/drsee/Drsee-58c29a9f56c0468e991ce3a5810427fb">Grow</a>
 
-</nav>
-</div>
-</div>
-<script>
-// 自执行函数 
-// chanshiyu.com 帮忙改好的(～o￣3￣)～
-(function() {
-    var os = (function() {
+<body id="page">
+  <div class="bg-img"
+    style="background-image: url(&quot;https://cdn.staticaly.com/gh/Dreamin121/dreamin@master/Linux.jpg&quot;);"></div>
+  <div id="spotlight">
+    <div id="home-center">
+      <h1 id="home-title">Space;D</h1>
+      <div id="home-social">
+        <a href="https://instagram.com/musang152" target="_blank" rel="noopener me" title="Instagram"><svg
+            t="1671546149650" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            p-id="2768" width="48" height="48">
+            <path
+              d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9z m0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zM725.5 250.7c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9c-0.1-26.6-21.4-47.9-47.9-47.9z"
+              p-id="2769"></path>
+            <path
+              d="M911.8 512c0-55.2 0.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-0.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-0.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9 0.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165z m-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"
+              p-id="2770">
+            </path>
+          </svg></a><a href="https://github.com/dreamin121" target="_blank" rel="noopener me" title="Github"><svg
+            t="1671592005462" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            p-id="3791" width="48" height="48">
+            <path
+              d="M787.696941 669.515294c0 44.935529-23.431529 118.181647-78.787765 118.181647-55.416471 0-78.848-73.246118-78.848-118.181647 0-44.875294 23.431529-118.181647 78.848-118.181647 55.356235 0 78.787765 73.306353 78.787765 118.181647zM315.090824 551.333647c-55.356235 0-78.787765 73.306353-78.787765 118.181647 0 44.935529 23.431529 118.181647 78.787765 118.181647s78.787765-73.246118 78.787764-118.181647c0-44.875294-23.431529-118.181647-78.787764-118.181647zM1024 561.212235c0 68.367059-6.746353 140.950588-37.526588 203.715765-81.257412 164.321882-304.609882 180.284235-464.594824 180.284235-162.454588 0-399.36-14.095059-483.689412-180.284235C6.746353 702.765176 0 629.579294 0 561.212235c0-89.871059 24.636235-174.742588 83.727059-243.651764a338.160941 338.160941 0 0 1-16.624941-104.688942c0-46.140235 10.420706-92.220235 31.382588-134.144 97.219765 0 159.382588 42.465882 233.231059 100.291765a823.536941 823.536941 0 0 1 190.162823-21.504c57.825882 0 116.314353 6.204235 172.333177 19.696941 73.246118-57.223529 135.348706-98.484706 231.363764-98.484706 20.961882 41.863529 31.382588 88.003765 31.382589 134.144 0 35.117176-5.541647 70.174118-16.624942 103.424C999.424 385.807059 1024 471.341176 1024 561.212235z m-137.878588 108.303059c0-94.147765-57.163294-177.212235-157.515294-177.212235-40.598588 0-79.329882 7.408941-119.988706 12.950588-31.984941 4.939294-63.969882 6.746353-96.617412 6.746353s-64.632471-1.807059-96.617412-6.746353c-39.996235-5.541647-79.390118-12.950588-119.988706-12.950588-100.291765 0-157.515294 83.064471-157.515294 177.212235 0 188.295529 172.272941 217.208471 322.43953 217.208471h103.424c150.166588 0.060235 322.379294-28.912941 322.379294-217.208471z"
+              p-id="3792">
+            </path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg></a><a href="https://t.me/dreaminfuck" target="_blank" rel="noopener me" title="Telegram"><svg
+            t="1671591855900" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            p-id="2676" width="48" height="48">
+            <path
+              d="M912.213333 154.026667A85.333333 85.333333 0 0 0 853.333333 128a85.333333 85.333333 0 0 0-33.28 6.826667l-708.266666 306.773333a42.666667 42.666667 0 0 0-26.453334 42.666667V512a42.666667 42.666667 0 0 0 29.44 42.666667L298.666667 616.106667l55.466666 187.306666a75.946667 75.946667 0 0 0 56.32 53.333334 62.72 62.72 0 0 0 15.36 0 73.813333 73.813333 0 0 0 50.773334-20.48l67.84-64 131.413333 103.68a85.333333 85.333333 0 0 0 90.026667 9.386666l14.08-7.253333a88.32 88.32 0 0 0 46.506666-62.72L938.666667 235.093333a90.026667 90.026667 0 0 0-26.453334-81.066666zM763.733333 805.12a25.173333 25.173333 0 0 1-12.8 17.493333l-14.08 7.253334a19.626667 19.626667 0 0 1-8.96 2.133333 19.626667 19.626667 0 0 1-12.373333-4.693333l-160.426667-128a20.906667 20.906667 0 0 0-27.733333 0l-94.72 89.173333a11.093333 11.093333 0 0 1-5.973333 2.133333V640a21.76 21.76 0 0 1 6.826666-15.786667c136.106667-128 217.6-199.68 266.24-240.64a15.786667 15.786667 0 0 0 5.12-11.093333 13.653333 13.653333 0 0 0-4.266666-11.093333 14.933333 14.933333 0 0 0-17.92-4.266667l-322.56 203.52a21.333333 21.333333 0 0 1-18.346667 0L149.333333 494.933333l694.186667-301.226666a16.64 16.64 0 0 1 7.68 0 22.186667 22.186667 0 0 1 16.213333 7.68 26.88 26.88 0 0 1 6.826667 23.466666z"
+              p-id="2677">
+            </path>
+
+          </svg></a>
+      </div>
+      <nav id="home-nav" class="site-nav">
+        <div class="language">
+          <a href="https://blog.drz.ink">Chinese</a>
+          <a href="https://go.drz.ink/archives/">English</a>
+          <a href="https://go.drz.ink/about/">About</a>
+          <a href="https://drsee.notion.site/drsee/Drsee-58c29a9f56c0468e991ce3a5810427fb">Grow</a>
+
+      </nav>
+    </div>
+  </div>
+  <script>
+    // 自执行函数 
+    // chanshiyu.com 帮忙改好的(～o￣3￣)～
+    (function () {
+      var os = (function () {
         var ua = navigator.userAgent,
-        isWindowsPhone = /(?:Windows Phone)/.test(ua),
-        isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
-        isAndroid = /(?:Android)/.test(ua),
-        isFireFox = /(?:Firefox)/.test(ua),
-        isChrome = /(?:Chrome|CriOS)/.test(ua),
-        isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
-        isPhone = /(?:iPhone)/.test(ua) && !isTablet,
-        isPc = !isPhone && !isAndroid && !isSymbian;
+          isWindowsPhone = /(?:Windows Phone)/.test(ua),
+          isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+          isAndroid = /(?:Android)/.test(ua),
+          isFireFox = /(?:Firefox)/.test(ua),
+          isChrome = /(?:Chrome|CriOS)/.test(ua),
+          isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
+          isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+          isPc = !isPhone && !isAndroid && !isSymbian;
         return {
-            isTablet: isTablet,
-            isPhone: isPhone,
-            isAndroid: isAndroid,
-            isPc: isPc
+          isTablet: isTablet,
+          isPhone: isPhone,
+          isAndroid: isAndroid,
+          isPc: isPc
         };
-    })();
-    // pc图片数组
-    var pcImgList = [
-    "https://cdn.staticaly.com/gh/Dreamin121/dreamin@master/Linux.jpg"
-    ]
-    // 手机图片数组
-    var mobileImgList = [
-    "https://cdn.staticaly.com/gh/Dreamin121/dreamin@master/fuck.png"
-    ]
-    var bgObj = document.getElementsByClassName("bg-img");
-    // 判断 ua
-    if (os.isAndroid || os.isPhone) {
+      })();
+      // pc图片数组
+      var pcImgList = [
+        "https://cdn.staticaly.com/gh/Dreamin121/dreamin@master/Linux.jpg"
+      ]
+      // 手机图片数组
+      var mobileImgList = [
+        "https://cdn.staticaly.com/gh/Dreamin121/dreamin@master/fuck.png"
+      ]
+      var bgObj = document.getElementsByClassName("bg-img");
+      // 判断 ua
+      if (os.isAndroid || os.isPhone) {
         console.log("手机");
         var rand = Math.round(Math.random() * mobileImgList.length);
         var url = "url('" + mobileImgList[rand] + "')";
         bgObj[0].style.backgroundImage = url;
-    } else if (os.isTablet) {
+      } else if (os.isTablet) {
         console.log("平板");
-    } else if (os.isPc) {
+      } else if (os.isPc) {
         console.log("电脑");
         var rand = Math.round(Math.random() * pcImgList.length);
         var url = "url('" + pcImgList[rand] + "')";
         bgObj[0].style.backgroundImage = url;
-    }
-})();;
-</script>
-<footer style="text-align:center;"><a href="https://k8s.li"><img class="img_github" src="https://cdn.staticaly.com/gh/Dreamin121/dreamin@master/GitHub.png"></a>&nbsp;<a href="https://cloudflare.com/"><img class="img_cloudflare" src="https://cdn.staticaly.com/gh/Dreamin121/dreamin@master/cloudflare.png"></a> &nbsp; Provide CDN/Cloud Services
+      }
+    })();;
+  </script>
+
+  <footer style="text-align:center;">
+    
     <div>
-备案号：<a href="https://icp.gov.moe/?keyword=20220418" target="_blank">萌ICP备20220418-12号</a>
-</div>
+      备案号：<a href="https://icp.gov.moe/?keyword=20220418" target="_blank">萌ICP备20220418-12号</a>
+    </div>
+
+    <a href="https://github.com"><img class="img_github"
+        src="https://cdn.staticaly.com/gh/Dreamin121/dreamin@master/GitHub.png"></a>&nbsp;
+        <a href="https://cloudflare.com/"><img class="img_cloudflare"
+        src="https://cdn.staticaly.com/gh/Dreamin121/dreamin@master/cloudflare.png"></a>
+        <span>&nbsp;Provide CDN/Cloud Services</span>
+    
     <div>
-        <span id="timeDate"></span>
-<span id="times"></span>  
-<script>
-    var now = new Date();
-    function createtime() {
-        var grt= new Date("10/05/2022 13:14:21");//此处修改你的建站时间或者网站上线时间
-        now.setTime(now.getTime()+250);
-        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
-        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
-        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
-        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
-        document.getElementById("timeDate").innerHTML = "在风风雨雨中运行了 "+dnum+" d ";
-        document.getElementById("times").innerHTML = hnum + " h " + mnum + " m " + snum + " s";
-    }
-setInterval("createtime()",250);
-</script>
+      <span id="timeDate"></span>
+      <span id="times"></span>
     </div>
     </footer>
+
+      <script>
+        var now = new Date();
+        function createtime() {
+          var grt = new Date("10/05/2022 13:14:21");//此处修改你的建站时间或者网站上线时间
+          now.setTime(now.getTime() + 250);
+          days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+          hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+          if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+          mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+          seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+          snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+          document.getElementById("timeDate").innerHTML = "Running through storms and winds for " + dnum + " d ";
+          document.getElementById("times").innerHTML = hnum + " h " + mnum + " m " + snum + " s";
+        }
+        setInterval("createtime()", 250);
+      </script>
+    </div>
+  </footer>
 </body>
+
 </html>
